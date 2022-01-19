@@ -1,0 +1,113 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Contact Sombra Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/contact.css' %}" />
+
+<div class="container body-content">
+    <section class="heading">
+        <div class="container">
+            <h2>Contact Us</h2>
+        </div>
+    </section>
+
+    <section class="paragraph">
+        <!--h3>Welcome to sombralandscaping.com</!-h3-->
+        <h3>Our Landscaping Experts Are Ready to Help You!</h3>
+        <p>
+            We are happy to provide you with landscaping services to bring out the natural beauty of your property. Please feel free to fill out the contact form bellow with your information
+            and project details. You can also speak with a Sombra Landscaping partner to understand your needs and provide you with the best service possible.
+        </p>
+    </section>
+
+    <section class="partners">
+        <h3>Feel Free to contact a Sombra Landscaping Partner</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <p class="contact-partners">
+                        Sombra Landscaping partners are ready to answer any questions you may have about any landscaping work that you may need for your property. Nelson and Manuel are excited to connect with you to discuss your landscaping needs. 
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="icon">
+                        <ul>
+                            <li>
+                                <div class="svg-cointainer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                    </svg><span id="textname">Nelson Fajardo</span>
+                                </div>
+                            <li>
+                                <div class="svg-cointainer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg> <span id="textphone">(512) 968-1855</span>
+                                </div>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg><span id="textname">Manuel Albiter</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg> <span id="textphone">(512) 968-1855</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="get_in_touch">
+        <h1 class="title">Contact Sombra Landscaping</h1>
+        <div class="container">
+            <form action="" method="POST" >
+            {% csrf_token %}
+                <div class="contact-form row">
+                    <div class="form-field col-md-6">
+                        <input id="name" class="input-text" type="text" name="name"/>
+                        <label for="name" class="label">Name</label>
+                    </div>
+                    <div class="form-field col-md-6">
+                        <input id="email" class="input-text" type="text" name="email" />
+                        <label for="email" class="label">email</label>
+                    </div>
+                    <div class="form-field col-md-6">
+                        <input id="company" class="input-text" type="text" name="address"/>
+                        <label for="company" class="label">Address</label>
+                    </div>
+                    <div class="form-field col-md-6">
+                        <input id="phonenumber" class="input-text" type="text" name="phonenumber"/>
+                        <label for="phonenumber" class="label">Contact Number</label>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <label for="message" class="label">Message</label>
+                        <textarea id="message" class="form-control" name="message" rows="8" style="min-width:100px; max-width:100%;min-height:50px;height:100%;width:100%;border-width: 0 0 1px 0; border: solid #03045e; margin-top: 15px;"></textarea>
+                    </div>
+                    <div class="form-field col-lg-12">
+                        <input class="submit-btn" type="submit" value="submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+</div>
+
+{% endblock %}

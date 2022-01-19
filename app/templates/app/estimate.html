@@ -1,0 +1,58 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Free Estimate | Sombra Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/estimate.css' %}" />
+
+<div class="banner">
+    <div class="container">
+        <h2>Recieve An Estimate</h2>
+    </div>
+</div>
+
+
+<div class="section">
+    <div class="container">
+        <p>
+            You may request landscapping services by calling (512) 363-9085, or simply by filling out our free estimates form. A partner from Sombra
+            Landscaping will contact you within one business day to respond to your request. 
+        </p>
+    </div>
+</div>
+
+<section class="quote_form">
+    <div class="container">
+    <h1 class="title">Enter You Information</h1>
+        <form action="" method="POST">
+            <div class="contact-form row">
+                <div class="form-group col-md-6">
+                        <label for="name">First & Last Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="First & Last Name" name="name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="emailaddress@example.com" name="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                </div>
+                <div class="form-group col-lg-12">
+                    <label for="message">Details of Requested Landscaping Services</label>
+                    <textarea id="message" class="form-control" name="message" rows="8" style="min-width:100px; max-width:100%;min-height:50px;width:100%;"></textarea>
+                </div>
+                <div class="form-field col-lg-12">
+                    <button type="submit" class="btn btn-primary mb-2 w-100">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

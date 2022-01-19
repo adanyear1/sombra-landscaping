@@ -1,0 +1,122 @@
+:root{
+    --banheight: 400px;
+    --fontsize: 2.0rem;
+    --cardtxtcolor: white;
+    --textbkgcol: darkgreen;
+}
+
+#pagebanner {
+    background-image: url("../../../static/app/images/home.jpg");
+    height: var(--banheight);
+    color: white;
+}
+.head-text {
+    height: var(--banheight);
+}
+
+.cg-p{
+    height: auto;
+}
+
+#area-col{
+    flex-direction: column;
+}
+
+.about-p,
+.why p,
+.city-list,
+.services p {
+    font-size: var(--fontsize);
+}
+
+.card-grid {
+    margin-top: 20px;
+}
+
+.card {
+    height: 250px;
+    margin-top: 8px;
+}
+
+.card-body {
+    flex-direction: column;
+}
+
+.card-title,
+.card-text {
+    background-color: var(--textbkgcol);
+    padding-left: 2px;
+    padding-right: 2px;
+    color: white;
+}
+
+#card1 {
+    background-image: url("../../../static/app/images/card1.jpg");
+    background-size: 100% 100%;
+}
+
+#card2 {
+    background-image: url("../../../static/app/images/card2.jpg");
+    background-size: 100% 100%;
+}
+
+#card3 {
+    background-image: url("../../../static/app/images/card3.jpg");
+    background-size: 100% 100%;
+}
+
+#card4 {
+    background-image: url("../../../static/app/images/card4.jpg");
+    background-size: 100% 100%;
+}
+
+#card5 {
+    background-image: url("../../../static/app/images/card5.jpg");
+    background-size: 100% 100%;
+}
+
+#card6 {
+    background-image: url("../../../static/app/images/card6.jpg");
+    background-size: 100% 100%;
+}
+
+.hs-bottom{
+    margin-top: 12px;
+    height: auto;
+}
+
+.home-connect {
+    color: white;
+    background-size: 100% 100%;
+    background-image: url("../../../static/app/images/home-contact.jpg");
+}
+
+/*.home-connect .title,
+.home-connect label{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+
+}*/
+
+@media (max-width: 767px){
+    #pagebanner {
+        background-image: url("../../../static/app/images/home-ban.jpg");
+    }
+    #pagebanner h1{
+        font-size: 1.8rem;
+        background-color: darkgreen;
+    }
+    .home-connect {
+        background-image: url("../../../static/app/images/home-contact-mob.jpg");
+    }
+}
+
+@media (min-width: 2560px){
+    .home-connect,
+    #pagebanner {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}

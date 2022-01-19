@@ -1,0 +1,151 @@
+:root{
+    --textbkgcol: darkgreen;
+}
+
+#pagebanner {
+    background-image: url("../../../static/app/images/services.jpg");
+    height: 380px;
+    color: white;
+    margin-top: -20px;
+}
+
+.banner h1 {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.banner h2 {
+    text-align: center;
+}
+
+.card-grid{
+    margin-top: 20px;
+}
+
+.card{
+    height: 250px;
+    margin-top: 4px;
+}
+
+.card-body{
+    flex-direction: column;
+}
+
+.card-title,
+.card-text{
+    background-color: var(--textbkgcol);
+    padding-left: 2px;
+    padding-right: 2px;
+    color: white;
+}
+
+#card1 {
+    background-image: url("../../../static/app/images/card1.jpg");
+    background-size: 100% 100%;
+}
+
+#card2 {
+    background-image: url("../../../static/app/images/card2.jpg");
+    background-size: 100% 100%;
+}
+
+#card3 {
+    background-image: url("../../../static/app/images/card3.jpg");
+    background-size: 100% 100%;
+}
+
+#card4 {
+    background-image: url("../../../static/app/images/card4.jpg");
+    background-size: 100% 100%;
+}
+
+#card5 {
+    background-image: url("../../../static/app/images/card5.jpg");
+    background-size: 100% 100%;
+}
+
+#card6 {
+    background-image: url("../../../static/app/images/card6.jpg");
+    background-size: 100% 100%;
+}
+
+.llbanner,
+.cmbanner{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 75%;
+    height: 100%;
+}
+
+#cmrow{
+    height: 55%;
+}
+
+.cmbanner1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 95%;
+    height: 100%;
+}
+
+.ll-p{
+    margin-top: 8px;
+}
+
+.services-head-img{
+    width: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 212px;
+}
+
+.about-home p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+.services-image img {
+    width: 100%;
+    height: auto; /*160px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.services {
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+
+@media (min-width: 375px) and (max-width: 575px) {
+    .services-image img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .services-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    #cmrow {
+        height: auto;
+    }
+    .col-md-6 .top-img{
+        padding-bottom: 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-image img {
+        height: 120px;
+    }
+}

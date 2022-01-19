@@ -1,0 +1,172 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>Home | Sombra Landscaping</title>
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="../../static/app/content/homepage.css" />
+
+<div class="banner" id="pagebanner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center justify-content-center">
+            <h1>We are a full service company that works hard to ensure that your property is looking beautiful</h1>
+        </div>
+    </div>
+</div>
+
+<section class="about">
+    <div class="container">
+        <h2><strong>About Sombra Landscaping</strong></h2>
+        <p class="about-p">
+            In early 2021, three construction professionals Manuel, Antero, and Nelson came together to unite their landscaping, concrete, masonry, and customer service skills. 
+            Clients who had visions of lush gardens and tropical backyards would see that these three professionals had an eye for detail, timeliness, and provided high quality work 
+            started to ask them if they would help them build them create their dreamscape. Due to customer demand they united forces and started Sombra Landscaping.
+        </p>
+    </div>
+</section>
+
+<section class="why">
+    <div class="container">
+        <h2 class="text-center"><strong>Why Sombra Landscaping?</strong></h2>
+        <p>
+            The Sombra Landscaping team has a combined 30 years of experience working with customers in the Austin area with expertise in providing a 
+            myriad of construction services such as concrete, masonry, and landscaping. With an eye for detail, the Sombra Landscaping team ensures that our
+            services leave your home looking beautiful by bringing out its natural beauty. What makes Sombra Landscaping stand out is that we ensure that our 
+            clients properties look better than before, and we ensure that our clients properties stay looking beautiful by providing recurring services. 
+        </p>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://cgbastrop.com/"><img class="cglogo mx-auto d-block" src="../../static/app/images/cglogo.png" /></a>
+            </div>
+            <div class="col-md-8 d-flex align-items-center justify-content-center">
+                <p class="cg-p">
+                    We have established a relationship with Community Gardens in Bastrop, TX to be their customer support provider and help execute the visions of their clients
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="misc-home page-content">
+    <div class="container">
+        <h2 class="maphead"><strong>Areas We Serve</strong></h2>
+        <div class="row">
+            <div class="col-md-6 areamap">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1q3Y6smhnPnfcszWdkpAGVXUhJUVthatu&ehbc=2E312F" style="width:100%; height:380px; margin-left: auto; margin-right: auto;"></iframe>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center" id="area-col">
+                <p class="city-list">
+                   Sombra Landscaping provides Landscaping services to the Austin Metropolitan Area. We have been serving the following areas:
+                </p>
+                <p class="city-list">
+                    Southeast Austin, Bastrop, Cedar Creek, Paige, Elgin, Dale, Manor, Red Rock, Lockhart, Mustang Ridge, McDade, and Coupland 
+                </p>
+                <p class="city-list">
+                    We are not limited to serving these areas. If you have a project outside of these areas please don't hesitate to contact us via our <a href="{% url 'contact' %}">contact page</a> or give us a call at (512) 635-9085. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2><strong>Our Services</strong></h2>
+        <p class="home-services">
+            At Sombra Landscaping we provide our clients with more than lawn mowing and tree trimming services. What we do is ensure that our clients have a reliable provider for anything that they need to ensure that their home is staying 
+            beautiful. Bellow you can see the services we provide our clients:
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="card1">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Lawn Maintenance</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="card2">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Landscape Design & Installation</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="card3">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Landscape Lighting</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" id="card4">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Fencing</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="card5">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Concrete & Masonry</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="card6">
+                        <div class="card-body d-flex align-items-center justify-content-center">
+                            <h2 class="card-title text-center">Power Washing</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="home-services hs-bottom">
+                Head on to our services page to learn more about how we can help you with our services, if you don&#39;t see what you need contact us via the Connect With Us form or give us a call.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="home-connect">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                    <h1 class="title">Connect With Us!</h1>
+                        <form action="" method="POST">
+                            <div class="contact-form row">
+                                <div class="form-group col-md-6">
+                                        <label for="name">First & Last Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="First & Last Name" name="name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="address">Address</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Address" name="address">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="emailaddress@example.com" name="email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                                </div>
+                                <div class="form-group col-lg-12">
+                                    <label for="message">Details of Requested Landscaping Services</label>
+                                    <textarea id="message" class="form-control" name="message" rows="8" style="min-width:100px; max-width:100%;min-height:50px;width:100%;"></textarea>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button type="submit" class="btn btn-primary mb-2 w-50">Submit</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

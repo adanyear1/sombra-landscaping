@@ -1,0 +1,87 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<title>About Us | Sombra Landscaping</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'app/content/about.css' %}" />
+
+<div class="banner" id="pagebanner">
+    <div class="container">
+        <div class="head-text d-flex align-items-center justify-content-center" id="head-banner">
+            <h1><strong>About Sombra Landscaping</strong></h1>
+            <h2><strong>Lean More About the Sombra Landscaping Story</strong></h2>
+        </div>
+    </div>
+</div>
+
+<section class="history">
+    <div class="container">
+        <h2><strong>Our History</strong></h2>
+        <div class="about-text-top">
+            <p>
+                While providing construction contracting services to clients, Nelson, Manuel, and Antero would frequently be asked if they would help clients with their landscaping needs. With no hesitation they would install beautiful outdoor lighting packages that would bring out the beauty of a ranch house during the night. Other clients would need help building a garden in their homes, so Nelson, Manuel, and Antero would work them to create the vision of their perfect garden. Frequently they would find themselves using their masonry skills to build brick flowerbeds in residential neighborhoods. After seeing the impact their work had on their clients&#39; properties they decided to create Sombra Landscaping.
+            </p>
+            <p>
+                In the Summer of 2021, Sombra Landscaping was officially registered as an LLC in the state of Texas. Since then, the Sombra Landscaping team has worked with clients all over the Austin Metropolitan Area to help them create beautiful spaces within their homes. Sombra Landscaping has a strong portfolio of projects, where the team has installed palm trees for a resort style home, built fences for 5-acre properties, and turned a dull backyard into a tropical getaway. For the future, Sombra Landscaping plans on growing its team to better serve the fast-growing Austin area.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section class="banner" id="mid-page-banner">
+        <div class="head-text d-flex align-items-center justify-content-center text-center">
+            <h1><strong>The Sombra Landscaping Difference</strong></h1>
+        </div>
+    </section>
+</div>
+
+<section class="difference">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card border-warning mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Timeliness</strong></h4>
+                        <p class="card-text">We complete our projects in a timely manner to ensure that everything is done correctly on the first time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-warning mb-3" id="row-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Expertise</strong></h4>
+                        <p class="card-text">Our team has experience working with both residential and commercial projects, and are able to tackle any obstacles</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-warning mb-3">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>Customer Satisfaction</strong></h4>
+                        <p class="card-text">Our goal is to leave every client satisfied with our work and never leave a job site until our clients are happy with our work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="collab">
+    <div class="container">
+        <h2><strong>Our Partners</strong></h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://cgbastrop.com/"><img class="cglogo mx-auto d-block" src="../../static/app/images/cglogo.png" /></a>
+            </div>
+            <div class="col-md-8 d-flex align-items-center justify-content-center">
+                <p class="cg-p">
+                    To better serve our community we have establish a relationship with Community Gardens in Bastrop, TX where we work with their clients to help them execute the visions of their gardens. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

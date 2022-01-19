@@ -1,0 +1,153 @@
+body {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/*Variables*/
+:root {
+    --formbkg: #B3B6B7;
+    --buttonbkg: darkgreen;
+    --fontcol: darkgreen;
+    --hovcol: orange;
+}
+
+/*Navbar Stlying*/
+.container-fluid{
+    background-color: white;
+}
+
+.navbar{
+    position: absolute;
+}
+
+/*Navbar Logo Styling*/
+.nav-logo{
+    height: 90px; 
+    width: 180px;
+}
+
+.nav.navbar-nav a {
+    background-color: white;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav.navbar-nav a:hover {
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link {
+    color: var(--fontcol);
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--hovcol);
+}
+
+/*.navbar-toggler {
+    border: 2px solid #ffaa65;
+} */
+
+/*Banner*/
+/*Styling for page banners*/
+#pagebanner {
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+
+/*form styling*/
+.quote_form button,
+.contactpage button {
+    background-color: var(--buttonbkg);
+    border-color: var(--buttonbkg);
+    color: white;
+}
+
+.quote_form .form-control,
+.contactpage .form-control {
+    border: 2px solid var(--formbkg);
+}
+
+.form-control {
+    width: 100%;
+}
+
+.btn-primary:hover,
+.btn-primary {
+    border-color: var(--buttonbkg);
+    background-color: var(--buttonbkg);
+}
+
+/*Footer*/
+.footer-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+}
+
+.head-contact-footer{
+    margin-left: 2em;
+}
+
+.list-group-item{
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.list-group-item a{
+    color: darkgreen;
+    font-size: 1.8rem;
+}
+
+footer .footer-text{
+    font-size: 1.8rem;
+}
+
+.footer-icons{
+    padding-top: 1em;
+}
